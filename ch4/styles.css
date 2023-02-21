@@ -1,0 +1,70 @@
+body {
+    background-color: cyan;
+}
+
+p {
+    margin: 2px;
+    font-size: 25px;
+}
+
+h1 {
+    margin: 5px
+}
+
+#container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+}
+
+.menu {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-left: 30vw;
+}
+
+#target1 {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+}
+
+#target2 {
+    position: absolute;
+    left: 40%;
+    top: 60%;
+}
+
+
+#target3 {
+    position: absolute;
+    left: 70%;
+    top: 10%;
+    
+}
+
+
+.box {
+    background-color: red;
+    width: 50px;
+    height: 50px;
+    pointer-events: none;
+    margin: 10px;
+}
+
+#playArea {
+    height: 70vh;
+    width: 80vw;
+    border-style: solid;
+    border-color: black;
+    border-width: 10px;
+    position: relative;
+    margin: 10px;
+    background-color: red;
+    margin: 0 auto;
+    margin-top: 10px;
+    
+}
