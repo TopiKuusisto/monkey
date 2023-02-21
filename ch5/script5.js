@@ -128,6 +128,8 @@ ready.onclick = () => {
 
 reset.onclick = () => {
 
+    resultCtr = 0;
+
     start.style.pointerEvents = "auto";
     result.style.pointerEvents = "none";
 
