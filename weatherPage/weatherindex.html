@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Page</title>
+    <link rel="stylesheet" href="weatherstyle.css">
+</head>
+<body id="body">
+
+
+    <div id="flex-container">
+
+        <div class="flex-item" id="nav">
+            <header id="header">
+                <h1>MyWeather</h1>
+                <h2 id="cityElement">TAMPERE</h2>
+            </header>
+
+            <form id="form">
+                <input id="input" type="text" placeholder="PLACE">
+                <button id="submit" type="button">SEARCH</button>
+            </form>
+
+        </div>
+
+        <div id="threeDays" class="flex-item">
+            <div class="day" id="day1">
+                <p>NOW</p>
+                <img src="./images/cloudIcon.png"  id="icon1">
+                <p id="temp1">DAY1 TEMP</p>
+            </div>
+
+            <div class="day" id="day2">
+                <p>TOMORROW</p>
+                <img src="./images/cloudIcon.png"  id="icon2">
+                <p  id="temp2">DAY2 TEMP</p>
+            </div>
+
+            <div class="day" id="day3">
+                <p id="tdat">THE DAY AFTER TOMORROW</p>
+                <img src="./images/cloudIcon.png" id="icon3">
+                <p  id="temp3">DAY3 TEMP</p>
+            </div>
+
+        </div>
+    
+    
+        <div id="chart" class="flex-item">
+            <canvas id="canvas"></canvas>
+        </div>
+    
+
+
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.2.1/dist/chart.umd.min.js"></script>
+    <script src="./weatherscript.js"></script>
+    
+</body>
+</html>
